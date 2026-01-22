@@ -20,5 +20,7 @@ services:
   consumer:
     build: ./consumer
     container_name: consumer
+    ports:
+      - "5000:3000"
     depends_on:
       - rabbitmq
